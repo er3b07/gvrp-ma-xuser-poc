@@ -1,0 +1,16 @@
+{
+  "gvrp-xuser-collector": {
+    "pre_tool_execution": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 /.agents/hooks-scripts/collector.py",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}
